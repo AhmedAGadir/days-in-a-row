@@ -55,7 +55,7 @@ const themeConfig = {
                 main: amber[500]
             },
             background: {
-                default: 'black'
+                default: 'orange'
             },
         },
         typography
