@@ -49,8 +49,8 @@ function ProgressPage() {
 
     useEffect(() => {
         const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
-        // 26th feb 2021
-        const firstDate = new Date(2021, 1, 26);
+        // 17th April 2024
+        const firstDate = new Date(2024, 3, 17);
         const secondDate = new Date();
 
         const diffDays = Math.round(Math.abs((firstDate - secondDate) / oneDay));
