@@ -50,12 +50,12 @@ function ProgressPage() {
     useEffect(() => {
         const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
         // 17th April 2024
-        const firstDate = new Date(2024, 3, 17);
+        const firstDate = new Date(2021, 6, 13);
         const secondDate = new Date();
 
         const diffDays = Math.round(Math.abs((firstDate - secondDate) / oneDay));
         setDays(diffDays);
-        setProgress(100 * diffDays / 160);
+        setProgress(100 * diffDays / 1009);
     }, [])
 
 
@@ -115,9 +115,9 @@ function ProgressPage() {
             <Box>
                 {/* <Typography variant="h4" component="h4">دروس اللغة العربية</Typography> */}
                 <Typography variant="h2" component="h2">
-                    Days to <Typography variant="inherit" color={progress < 100 ? 'primary' : 'secondary'}>160</Typography>
+                    Lets <Typography variant="inherit" color={progress < 100 ? 'primary' : 'secondary'}>Go!</Typography>
                 </Typography>
-                <Typography variant="h5" component="h5" gutterBottom>Thursday, 5 August 2021</Typography>
+                <Typography variant="h5" component="h5" gutterBottom>17th April 2024</Typography>
             </Box>
             <Box marginTop={4}>
                 <CircularProgressWithLabel value={progress} days={days} />
